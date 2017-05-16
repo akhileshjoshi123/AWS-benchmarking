@@ -1,0 +1,161 @@
+#########################load files##############################
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head load_10.txt
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test10 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -load
+[OVERALL], RunTime(ms), 38342.0
+[OVERALL], Throughput(ops/sec), 6665.014866204163
+[CLEANUP], Operations, 10
+[CLEANUP], AverageLatency(us), 48.0
+[CLEANUP], MinLatency(us), 18
+[CLEANUP], MaxLatency(us), 151
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head load_40
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test40 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -load
+[OVERALL], RunTime(ms), 72479.0
+[OVERALL], Throughput(ops/sec), 7859.104016335767
+[CLEANUP], Operations, 10
+[CLEANUP], AverageLatency(us), 51.4
+[CLEANUP], MinLatency(us), 19
+[CLEANUP], MaxLatency(us), 170
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head load_80
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test80 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -load
+[OVERALL], RunTime(ms), 131366.0
+[OVERALL], Throughput(ops/sec), 7500.966764611848
+[CLEANUP], Operations, 10
+[CLEANUP], AverageLatency(us), 45.7
+[CLEANUP], MinLatency(us), 18
+[CLEANUP], MaxLatency(us), 161
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head load_160
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test160 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -load
+[OVERALL], RunTime(ms), 240137.0
+[OVERALL], Throughput(ops/sec), 7523.08057483853
+[CLEANUP], Operations, 10
+[CLEANUP], AverageLatency(us), 51.9
+[CLEANUP], MinLatency(us), 33
+[CLEANUP], MaxLatency(us), 140
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head load_320
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test320 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -load
+[OVERALL], RunTime(ms), 456853.0
+[OVERALL], Throughput(ops/sec), 7459.147690832719
+[CLEANUP], Operations, 10
+[CLEANUP], AverageLatency(us), 63.5
+[CLEANUP], MinLatency(us), 15
+[CLEANUP], MaxLatency(us), 334
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head load_640
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test640 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -load
+[OVERALL], RunTime(ms), 898313.0
+[OVERALL], Throughput(ops/sec), 7174.709705859762
+[CLEANUP], Operations, 10
+[CLEANUP], AverageLatency(us), 52.0
+[CLEANUP], MinLatency(us), 31
+[CLEANUP], MaxLatency(us), 125
+[CLEANUP], 95thPercentileLatency(ms), 0
+[CLEANUP], 99thPercentileLatency(ms), 0
+
+
+
+##############################run commands #################################
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head run_10
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test10 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -t
+[OVERALL], RunTime(ms), 15148.0
+[OVERALL], Throughput(ops/sec), 6601.531555320835
+[READ], Operations, 63628
+[READ], AverageLatency(us), 1673.0996730998932
+[READ], MinLatency(us), 259
+[READ], MaxLatency(us), 140910
+[READ], 95thPercentileLatency(ms), 3
+[READ], 99thPercentileLatency(ms), 7
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head run_40
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test40 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -t
+[OVERALL], RunTime(ms), 45702.0
+[OVERALL], Throughput(ops/sec), 8752.352194652312
+[READ], Operations, 252975
+[READ], AverageLatency(us), 1315.3010653226604
+[READ], MinLatency(us), 257
+[READ], MaxLatency(us), 84688
+[READ], 95thPercentileLatency(ms), 2
+[READ], 99thPercentileLatency(ms), 3
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head run_80
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test80 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -t
+[OVERALL], RunTime(ms), 96136.0
+[OVERALL], Throughput(ops/sec), 8321.544478655238
+[READ], Operations, 506200
+[READ], AverageLatency(us), 1393.190280521533
+[READ], MinLatency(us), 267
+[READ], MaxLatency(us), 125323
+[READ], 95thPercentileLatency(ms), 2
+[READ], 99thPercentileLatency(ms), 3
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head run_160
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test160 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -t
+[OVERALL], RunTime(ms), 214151.0
+[OVERALL], Throughput(ops/sec), 7471.363663956741
+[READ], Operations, 1011795
+[READ], AverageLatency(us), 1561.781257072826
+[READ], MinLatency(us), 260
+[READ], MaxLatency(us), 155719
+[READ], 95thPercentileLatency(ms), 2
+[READ], 99thPercentileLatency(ms), 5
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head run_320
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test320 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -t
+[OVERALL], RunTime(ms), 420728.0
+[OVERALL], Throughput(ops/sec), 7605.864121237474
+[READ], Operations, 2024624
+[READ], AverageLatency(us), 1550.185965887987
+[READ], MinLatency(us), 276
+[READ], MaxLatency(us), 163235
+[READ], 95thPercentileLatency(ms), 2
+[READ], 99thPercentileLatency(ms), 5
+
+
+
+ubuntu@ip-172-31-38-115:~/ycsb-0.3.0/results_Cassandra$ head run_640
+YCSB Client 0.1
+Command line: -db com.yahoo.ycsb.db.CassandraClient10 -P workloads/workload_test640 -p hosts=172.31.35.183 -threads 10 -p columnfamily=data -s -t
+[OVERALL], RunTime(ms), 1161273.0
+[OVERALL], Throughput(ops/sec), 5511.193319744797
+[READ], Operations, 4049577
+[READ], AverageLatency(us), 2446.0628406374294
+[READ], MinLatency(us), 274
+[READ], MaxLatency(us), 1548370
+[READ], 95thPercentileLatency(ms), 6
+[READ], 99thPercentileLatency(ms), 25
+
+
